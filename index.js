@@ -12,5 +12,5 @@ function submitData(name, email) {
 		.then((json) => {
 			document.body.innerHTML = json['id'];
 		})
-		.catch((error) => document.body.append(error.message));
+		.catch((error) => (document.body.innerHTML = error.message));
 }
